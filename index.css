@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f0f1f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.test-box {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.page {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.username {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#question {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.answer:hover {
+  background: #f6f6ff;
+  border-color: #6c63ff;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  background-color: #6f08a2;
+  color: white;
+  width: 45%;
+  border-radius: 15px;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* ✅ Telefonlar uchun (kichik ekran) */
+@media (max-width: 600px) {
+
+  .test-box {
+    padding: 15px;
+  }
+
+  #question {
+    font-size: 16px;
+  }
+
+  .answer {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}
+
+/* ✅ Juda kichkina ekranlar */
+@media (max-width: 350px) {
+
+  #question {
+    font-size: 14px;
+  }
+
+  .answer {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
