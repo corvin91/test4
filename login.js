@@ -46,7 +46,7 @@ function teacherr(teachers) {
       passwordInput.style.border = '1px solid #ccc';
 
       localStorage.setItem('activeTeacher', JSON.stringify(found));
-      window.location.href = './index.html';
+      window.location.href = './about.html';
     }
   });
 }
